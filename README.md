@@ -5,3 +5,18 @@
 IEEE Signal Processing Letters
 
 ![Spectrogram](Demo/spectrogram.png)
+
+## Citation
+
+If you find our repository valuable for your work, please consider citing our paper:
+
+```bibtex
+@misc{xuan2026wstxserieswaveletscattering,
+      title={WST-X Series: Wavelet Scattering Transform for Interpretable Speech Deepfake Detection}, 
+      author={Xi Xuan and Davide Carbone and Ruchi Pandey and Wenxin Zhang and Tomi H. Kinnunen},
+      year={2026},
+      eprint={2602.02980},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2602.02980}, 
+}
