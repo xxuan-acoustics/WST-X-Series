@@ -8,9 +8,9 @@ Submitted to IEEE Signal Processing Letters
 
 ## Supplementary Materials
 
-### Experiment 1 — Energy Distribution of Wavelet Scattering Coefficients
+#### Experiment 1 — Energy Distribution of Wavelet Scattering Coefficients
 
-### Experiment 2 — Quantitative SHAP Explainability of Wavelet Scattering Coefficients
+#### Experiment 2 — Quantitative SHAP Explainability of Wavelet Scattering Coefficients
 
 ## Citation
 
