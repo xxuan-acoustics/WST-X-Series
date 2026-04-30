@@ -18,9 +18,9 @@ To provide a physically intuitive justification for why second-order scattering 
 
 **Definitions.** We define the *energy* of a scattering coefficient as the squared ℓ₂-norm of its output, and the *energy proportion* at order *m* as the fraction of the total scattering energy contributed by all *m*-th order paths. Formally:
 
-$$E_m(x) \;=\; \sum_{p \in \mathcal{P}_m} \big\| S_J[p]\, x \big\|_2^{\,2},$$
+$$E_m(x) = \sum_{p \in \mathcal{P}_m} \| S_J[p] x \|_2^2,$$
 
-$$\rho_m(x) \;=\; \frac{E_m(x)}{\sum_{m'=0}^{M} E_{m'}(x)} \times 100\%.$$
+$$\rho_m(x) = \frac{E_m(x)}{\sum_{m'=0}^{M} E_{m'}(x)} \times 100\%.$$
 
 This normalization ensures that $\sum_{m=0}^{M} \rho_m(x) = 100\%$ for each sample, making the proportions directly comparable across scattering orders and averaging scales *J*.
 
