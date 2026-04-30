@@ -39,7 +39,7 @@ This normalization ensures that $\sum_{m=0}^{M} \rho_m(x) = 100\%$ for each samp
 
 </div>
 
-**Findings.** The results indicate a rapid energy decay across scattering orders. At `J = 8`, 2nd-order coefficients capture over 97% of the total energy, while 3rd-order coefficients account for less than 0.2%. Together, *M = 1* and *M = 2* collectively capture nearly all (>99%) of the scattering energy. While the performance gain from *M = 1* to *M = 2* shows that even low-energy coefficients can carry discriminative information, this does not hold for *M = 3*: the additionally included coefficients carry negligible energy and provide limited new discriminative cues, which we hypothesize contributes to overfitting — consistent with the performance degradation observed at *M = 3* in Table I of the manuscript.
+**Results and Analysis.** The results indicate a rapid energy decay across scattering orders. At `J = 8`, 2nd-order coefficients capture over 97% of the total energy, while 3rd-order coefficients account for less than 0.2%. Together, *M = 1* and *M = 2* collectively capture nearly all (>99%) of the scattering energy. While the performance gain from *M = 1* to *M = 2* shows that even low-energy coefficients can carry discriminative information, this does not hold for *M = 3*: the additionally included coefficients carry negligible energy and provide limited new discriminative cues, which we hypothesize contributes to overfitting — consistent with the performance degradation observed at *M = 3* in Table I of the manuscript.
 
 ---
 
@@ -68,7 +68,7 @@ To quantitatively substantiate the interpretability of the WST-X front-end, we p
 
 </div>
 
-**Findings.** The first-order coefficients, which jointly encode the spectral envelope, attain the highest aggregated SHAP value (2.45), followed by the second-order coefficients at the highest and lowest modulation frequencies in the analyzed range (269 Hz with SHAP 1.63, and 30 Hz with SHAP 0.80). Mid-frequency second-order coefficients (60–149 Hz) contribute relatively less. Unlike SSL features, whose individual dimensions lack direct physical interpretation, each WST coefficient corresponds to a specific modulation frequency determined by ξ, enabling a physical interpretation of the deepfake detection decision.
+**Results and Analysis.** The first-order coefficients, which jointly encode the spectral envelope, attain the highest aggregated SHAP value (2.45), followed by the second-order coefficients at the highest and lowest modulation frequencies in the analyzed range (269 Hz with SHAP 1.63, and 30 Hz with SHAP 0.80). Mid-frequency second-order coefficients (60–149 Hz) contribute relatively less. Unlike SSL features, whose individual dimensions lack direct physical interpretation, each WST coefficient corresponds to a specific modulation frequency determined by ξ, enabling a physical interpretation of the deepfake detection decision.
 
 **References.**
 
