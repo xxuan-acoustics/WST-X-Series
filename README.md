@@ -47,7 +47,7 @@ This normalization ensures that $\sum_{m=0}^{M} \rho_m(x) = 100\%$ for each samp
 
 To quantitatively substantiate the interpretability of the WST-X front-end, we perform SHAP (SHapley Additive exPlanations) [1] analysis on the 1D WST scattering coefficients with `J = 2, Q = 10`. SHAP is a feature-attribution method grounded in cooperative game theory [2].
 
-**Setup.** We extract statistical features (mean, standard deviation, skewness, and kurtosis) from each coefficient across 1,000 test samples, and train a gradient boosting classifier to obtain SHAP values.
+**Setup.** For each 1D WST coefficient (J = 2, Q = 10), we compute SHAP values [1] via expected gradients [3] on the trained detector, using 1,000 class-balanced dev-set utterances, and average them over time to obtain per-coefficient importance.
 
 <p align="center"><b>Table 2.</b> Mean absolute SHAP values for each 1D WST scattering coefficient (<code>J = 2, Q = 10</code>), where ξ denotes the normalized center frequency and Hz = ξ × f<sub>s</sub> (f<sub>s</sub> = 16,000 Hz). Larger SHAP values indicate features that more strongly influence the detection decisions. Top two scattering coefficients are in <b>bold</b>.</p>
 
@@ -75,6 +75,8 @@ To quantitatively substantiate the interpretability of the WST-X front-end, we p
 [1] S. M. Lundberg and S.-I. Lee, "A unified approach to interpreting model predictions," in *Advances in Neural Information Processing Systems (NeurIPS)*, vol. 30, 2017, pp. 4765–4774.
 
 [2] L. S. Shapley, "A value for n-person games," in *Contributions to the Theory of Games, Volume II*, Princeton University Press, 1953, pp. 307–317.
+
+[3] G. Erion, J. D. Janizek, P. Sturmfels, S. M. Lundberg, and S.-I. Lee, "Improving performance of deep learning models with axiomatic attribution priors and expected gradients," *Nature Machine Intelligence*, vol. 3, no. 7, pp. 620–631, 2021.
 
 ---
 
